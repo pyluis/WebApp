@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+.body {
+    background-color:lightgrey;
+    color:white;
+    margin: 0;
+}
+.header-div{
+    text-align: center;
+    font-size: 12pt;
+    border: 5px outset black;
+    padding: 1px;
+}
+.topnav{
+    overflow: hidden;
+    background-color: indianred;
+    font-size: 25px;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color:lightgray;
+    color: indianred;
+}
+.topnav .current-page {
+    background-color:white;
+    color:salmon;
+}
+
+.header{
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 43, 233, 0.452);
+    text-shadow: 2px, 2px, black;
+    font-weight: bold;
+    text-align: left;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 150px;
+  }
+  
+/* Left and right column */
+.column.side {
+width: 25%;
+vertical-align: middle;
+}
+  
+  /* Middle column */
+  .column.middle {
+    width: 50%;
+    vertical-align: middle;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+@media screen and (max-width:600px){
+    .column.side, .column.column.middle{
+        width: 100%;
+    }
+.left-bold{
+    text-align:left;
+    font-weight: bold;
+}
+}
+.center-align{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
