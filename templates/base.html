@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+<link rel='stylesheet' href={{ url_for('static', filename='css\bootstrap.min.css')}}>
+<script src={{ url_for('static', filename='js\bootstrap.min.js')}}></script>
+<script src={{ url_for('static', filename='jquery-3.6.0.min.js')}}></script>
 </head>
 <body class="body">
     <div class="header row">
@@ -17,7 +19,7 @@
           <h2 >Side</h2>
         </div>
     </div>
-<div class="topnav">
+<div class="topnav text-light">
   {% set navbar_menus = [('/', 'home', 'Home'),
                           ('/about', 'about', 'About'),
                           ('/contact','contact', 'Contact Me'),
